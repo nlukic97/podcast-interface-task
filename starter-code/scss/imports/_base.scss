@@ -9,5 +9,11 @@ body {
     font-size: 18px;
     // line-height: 28px;
     color: $color-white;
+    background-color:$color-darker-blue;
     font-weight: 300;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }

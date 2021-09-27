@@ -7,17 +7,35 @@ body {
   font-family: "Chivo", sans-serif;
   font-size: 18px;
   color: #FFF;
+  background-color: #121725;
   font-weight: 300;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  background: url("../../assets/desktop/image-host.jpg") no-repeat center right/contain;
+  height: 640px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border: 1px solid green;
+  max-width: 1275px;
+  margin: 165px auto 0;
 }
 
 .content {
   display: inline-block;
   background-color: #121725;
   width: 723px;
-  min-height: 509px;
+  padding-top: 99px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  border: 1px solid orange;
 }
 .content h1 {
   color: #FFF;
@@ -82,10 +100,12 @@ body {
   color: #121725;
 }
 .content .sign-up-container p.error-message {
-  color: red;
+  color: #FB3E3E;
   font-size: 12px;
-  padding: 0.4rem 1.8rem;
+  padding: 0 1.8rem 0.4rem;
   display: none;
+  position: absolute;
+  font-weight: 700;
 }
 .content .sign-up-container p.error-message.show-error {
   display: block;
@@ -108,6 +128,11 @@ body {
 }
 .content .platforms #pocket-casts {
   width: 129px;
+}
+
+#logo {
+  position: absolute;
+  top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
