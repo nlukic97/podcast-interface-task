@@ -13,6 +13,7 @@
         font-size: 52px;
         font-weight: 300;
         text-transform:uppercase;
+        margin: 1rem 0;
         
         .color-green {
             color:$color-green;
@@ -22,9 +23,11 @@
     p {
         color:$color-light-gray;
         width: 437px; //careful of this one
+        line-height: 28px;
     }
     
     .sign-up-container {
+        margin: 40px 0;
         .sign-up-component {
             display: inline-block;
             background-color: $color-dark-blue;
@@ -92,6 +95,10 @@
 
     .platforms {
         // display: flex;
+        img {
+            opacity: 0.6;
+        }
+        
         #apple-podcasts, #google-podcasts, #pocket-casts{
             margin-left: 2rem;
         }

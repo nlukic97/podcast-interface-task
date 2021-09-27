@@ -24,6 +24,7 @@ body {
   font-size: 52px;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 1rem 0;
 }
 .content h1 .color-green {
   color: #54E6AF;
@@ -31,6 +32,10 @@ body {
 .content p {
   color: #C2CBE5;
   width: 437px;
+  line-height: 28px;
+}
+.content .sign-up-container {
+  margin: 40px 0;
 }
 .content .sign-up-container .sign-up-component {
   display: inline-block;
@@ -84,6 +89,9 @@ body {
 }
 .content .sign-up-container p.error-message.show-error {
   display: block;
+}
+.content .platforms img {
+  opacity: 0.6;
 }
 .content .platforms #apple-podcasts, .content .platforms #google-podcasts, .content .platforms #pocket-casts {
   margin-left: 2rem;
