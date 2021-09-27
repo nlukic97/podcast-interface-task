@@ -16,52 +16,55 @@ body {
 }
 
 .container {
-  background: url("../../assets/desktop/image-host.jpg") no-repeat center right/contain;
+  background: url("../../assets/desktop/image-host.jpg") no-repeat top right/contain;
   height: 640px;
   width: 100%;
+  max-width: 1440px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   border: 1px solid green;
-  max-width: 1275px;
   margin: 165px auto 0;
 }
-
-.content {
+.container .content-box {
+  width: 60%;
+  background-color: #2C344B;
+}
+.container .content-box .content {
   display: inline-block;
   background-color: #121725;
-  width: 723px;
   padding-top: 99px;
+  padding-left: 16%;
+  border: 1px solid orange;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border: 1px solid orange;
 }
-.content h1 {
+.container .content-box .content h1 {
   color: #FFF;
   font-size: 52px;
   font-weight: 300;
   text-transform: uppercase;
   margin: 1rem 0;
 }
-.content h1 .color-green {
+.container .content-box .content h1 .color-green {
   color: #54E6AF;
 }
-.content p {
+.container .content-box .content p {
   color: #C2CBE5;
   width: 437px;
   line-height: 28px;
 }
-.content .sign-up-container {
+.container .content-box .content .sign-up-container {
   margin: 40px 0;
 }
-.content .sign-up-container .sign-up-component {
+.container .content-box .content .sign-up-container .sign-up-component {
   display: inline-block;
   background-color: #2C344B;
   border-radius: 100px;
   padding: 0.3rem;
 }
-.content .sign-up-container .sign-up-component input {
+.container .content-box .content .sign-up-container .sign-up-component input {
   display: inline-block;
   background-color: transparent;
   border: none;
@@ -71,19 +74,19 @@ body {
   font-weight: 700;
   width: 220px;
 }
-.content .sign-up-container .sign-up-component input::placeholder, .content .sign-up-container .sign-up-component input::-webkit-input-placeholder {
+.container .content-box .content .sign-up-container .sign-up-component input::placeholder, .container .content-box .content .sign-up-container .sign-up-component input::-webkit-input-placeholder {
   font-weight: 700;
   border: none;
   color: #C2CBE5;
 }
-.content .sign-up-container .sign-up-component input:-webkit-autofill, .content .sign-up-container .sign-up-component input:-webkit-autofill:hover, .content .sign-up-container .sign-up-component input:-webkit-autofill:focus {
+.container .content-box .content .sign-up-container .sign-up-component input:-webkit-autofill, .container .content-box .content .sign-up-container .sign-up-component input:-webkit-autofill:hover, .container .content-box .content .sign-up-container .sign-up-component input:-webkit-autofill:focus {
   border: none;
   -webkit-text-fill-color: #FFF;
   box-shadow: none;
   -webkit-box-shadow: none;
   transition: background-color 5000s ease-in-out 0s;
 }
-.content .sign-up-container .sign-up-component button {
+.container .content-box .content .sign-up-container .sign-up-component button {
   display: inline-block;
   background-color: #54E6AF;
   color: #121725;
@@ -93,13 +96,13 @@ body {
   border: none;
   font-weight: 700;
 }
-.content .sign-up-container .sign-up-component button:hover {
+.container .content-box .content .sign-up-container .sign-up-component button:hover {
   cursor: pointer;
   color: #B3FFE2;
   background-color: #B3FFE2;
   color: #121725;
 }
-.content .sign-up-container p.error-message {
+.container .content-box .content .sign-up-container p.error-message {
   color: #FB3E3E;
   font-size: 12px;
   padding: 0 1.8rem 0.4rem;
@@ -107,26 +110,26 @@ body {
   position: absolute;
   font-weight: 700;
 }
-.content .sign-up-container p.error-message.show-error {
+.container .content-box .content .sign-up-container p.error-message.show-error {
   display: block;
 }
-.content .platforms img {
+.container .content-box .content .platforms img {
   opacity: 0.6;
 }
-.content .platforms #apple-podcasts, .content .platforms #google-podcasts, .content .platforms #pocket-casts {
+.container .content-box .content .platforms #apple-podcasts, .container .content-box .content .platforms #google-podcasts, .container .content-box .content .platforms #pocket-casts {
   margin-left: 2rem;
 }
-.content .platforms #spotify {
+.container .content-box .content .platforms #spotify {
   width: 96px;
 }
-.content .platforms #apple-podcasts {
+.container .content-box .content .platforms #apple-podcasts {
   width: 78px;
 }
-.content .platforms #google-podcasts {
+.container .content-box .content .platforms #google-podcasts {
   width: 125px;
   padding-bottom: 4px;
 }
-.content .platforms #pocket-casts {
+.container .content-box .content .platforms #pocket-casts {
   width: 129px;
 }
 
