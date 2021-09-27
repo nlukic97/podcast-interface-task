@@ -1,147 +1,154 @@
 .container {
     // background: chartreuse;
-    background: url('../../assets/desktop/image-host.jpg') no-repeat center right/contain;
+    background: url('../../assets/desktop/image-host.jpg') no-repeat top right/contain;
     height: 640px;
+    
     width: 100%;
+    max-width: 1440px;
+    
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    border: 1px solid green;
-    max-width: 1275px;
+    // /border: 1px solid green;
     margin:165px auto 0; //reset this
-}
-
-// ---------- Content box ---------- 
-.content {
-    display: inline-block;
-    background-color: $color-darker-blue;
-    width: 723px; //careful of this one - should it be 'max-width' ?
-    // min-height:509px;
-    padding-top: 99px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border: 1px solid orange;
+    position: relative;
     
-    h1 {
-        color: $color-white;
-        font-size: 52px;
-        font-weight: 300;
-        text-transform:uppercase;
-        margin: 1rem 0;
-        
-        .color-green {
-            color:$color-green;
+    .content-box {
+        width: 60%;
+        background-color:$color-darker-blue;
+        padding-left: 10%;
+
+        #logo {
+            position: absolute;
+            top: -30px;
         }
-    }
-    
-    p {
-        color:$color-light-gray;
-        width: 437px; //careful of this one - should it be 'max-width' ?
-        line-height: 28px;
-    }
-    
-    .sign-up-container {
-        margin: 40px 0;
         
-        .sign-up-component {
+        // ---------- Content box ---------- 
+        .content {
             display: inline-block;
-            background-color: $color-dark-blue;
-            border-radius: 100px;
-            padding: 0.3rem;
+            background-color: $color-darker-blue;
+            //width: 723px; //careful of this one - should it be 'max-width' ?
+            padding: 99px 1.5rem 0 0;
             
-            input {
-                display: inline-block;
-                background-color: transparent;
-                border: none;
-                outline: none;
-                padding: 1rem  0 1rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
+            h1 {
                 color: $color-white;
-                font-weight: 700;
-                width: 220px;
+                font-size: 52px;
+                font-weight: 300;
+                text-transform:uppercase;
+                margin: 1rem 0;
                 
-                &::placeholder,
-                &::-webkit-input-placeholder {
-                    font-weight: 700;
-                    border: none;
-                    color:$color-light-gray;
+                .color-green {
+                    color:$color-green;
                 }
-                
-                &:-webkit-autofill,
-                &:-webkit-autofill:hover, 
-                &:-webkit-autofill:focus {
-                    border: none;
-                    -webkit-text-fill-color: $color-white;
-                    box-shadow:none;
-                    -webkit-box-shadow: none;
-                    transition: background-color 5000s ease-in-out 0s;
-                }
-                
             }
             
-            button {
-                display: inline-block;
-                background-color: $color-green;
-                color: $color-darker-blue;
-                text-transform: capitalize;
-                border-radius: 100px;
-                padding: 1rem 1.5rem;
-                border: none;
-                font-weight: 700;
+            p {
+                color:$color-light-gray;
+                width: 437px; //careful of this one - should it be 'max-width' ?
+                line-height: 28px;
+            }
+            
+            .sign-up-container {
+                margin: 40px 0;
                 
-                &:hover {
-                    cursor: pointer;
-                    color: $color-light-green;
-                    background-color: $color-light-green;
-                    color: $color-darker-blue;
+                .sign-up-component {
+                    display: inline-block;
+                    background-color: $color-dark-blue;
+                    border-radius: 100px;
+                    padding: 0.3rem;
+                    
+                    input {
+                        display: inline-block;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        padding: 1rem  0 1rem 1.5rem;
+                        color: $color-white;
+                        font-weight: 700;
+                        width: 220px;
+                        
+                        &::placeholder,
+                        &::-webkit-input-placeholder {
+                            font-weight: 700;
+                            border: none;
+                            color:$color-light-gray;
+                        }
+                        
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:hover, 
+                        &:-webkit-autofill:focus {
+                            border: none;
+                            -webkit-text-fill-color: $color-white;
+                            box-shadow:none;
+                            -webkit-box-shadow: none;
+                            transition: background-color 5000s ease-in-out 0s;
+                        }
+                        
+                    }
+                    
+                    button {
+                        display: inline-block;
+                        background-color: $color-green;
+                        color: $color-darker-blue;
+                        text-transform: capitalize;
+                        border-radius: 100px;
+                        padding: 1rem 1.5rem;
+                        border: none;
+                        font-weight: 700;
+                        
+                        &:hover {
+                            cursor: pointer;
+                            color: $color-light-green;
+                            background-color: $color-light-green;
+                            color: $color-darker-blue;
+                        }
+                    }
+                }
+                
+                p.error-message {
+                    color: $color-red;
+                    font-size: 12px;
+                    padding: 0 1.8rem 0.4rem; // left&right padding --->  0.3rem (.sign-up-component) + 1.5rem (input) = 1.8rem
+                    display: none;
+                    position: absolute; //no top or left, since we want it in the same position but out of the normal flow
+                    font-weight: 700;
+                    &.show-error {
+                        display: block;
+                    }
+                }
+            }
+            
+            .platforms {
+                // display: flex;
+                img {
+                    opacity: 0.6;
+                }
+                
+                #apple-podcasts, #google-podcasts, #pocket-casts{
+                    margin-left: 2rem;
+                }
+                
+                #spotify {
+                    width: 96px;
+                }
+                
+                #apple-podcasts {
+                    width: 78px;
+                }
+                
+                #google-podcasts {
+                    width: 125px;
+                    padding-bottom: 4px;
+                }
+                
+                #pocket-casts {
+                    width: 129px;
                 }
             }
         }
-
-        p.error-message {
-            color: $color-red;
-            font-size: 12px;
-            padding: 0 1.8rem 0.4rem; // left&right padding --->  0.3rem (.sign-up-component) + 1.5rem (input) = 1.8rem
-            display: none;
-            position: absolute; //no top or left, since we want it in the same position but out of the normal flow
-            font-weight: 700;
-            &.show-error {
-                display: block;
-            }
-        }
     }
-
-    .platforms {
-        // display: flex;
-        img {
-            opacity: 0.6;
-        }
-
-        #apple-podcasts, #google-podcasts, #pocket-casts{
-            margin-left: 2rem;
-        }
-
-        #spotify {
-            width: 96px;
-        }
-        
-        #apple-podcasts {
-            width: 78px;
-        }
-        
-        #google-podcasts {
-            width: 125px;
-            padding-bottom: 4px;
-        }
-
-        #pocket-casts {
-            width: 129px;
-        }
-    }
-}
-
-#logo {
-    position: absolute;
-    top: 20px;
 }
