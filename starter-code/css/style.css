@@ -31,18 +31,30 @@ body {
 }
 .content .sign-up-container .sign-up-component {
   display: inline-block;
-  border: 1px solid orange;
-  background-color: #5A668A;
+  background-color: #2C344B;
   border-radius: 100px;
+  padding: 0.3rem;
 }
 .content .sign-up-container .sign-up-component input {
   display: inline-block;
   background-color: transparent;
   border: none;
+  outline: none;
+  padding: 1rem 0 1rem 1.5rem;
+  color: #FFF;
+  font-weight: 700;
+  width: 220px;
 }
-.content .sign-up-container .sign-up-component input:focus {
-  background-color: transparent;
+.content .sign-up-container .sign-up-component input::placeholder, .content .sign-up-container .sign-up-component input::-webkit-input-placeholder {
+  font-weight: 700;
   border: none;
+  color: #C2CBE5;
+}
+.content .sign-up-container .sign-up-component input:-webkit-autofill, .content .sign-up-container .sign-up-component input:-webkit-autofill:hover, .content .sign-up-container .sign-up-component input:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #FFF;
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
 }
 .content .sign-up-container .sign-up-component button {
   display: inline-block;
@@ -52,10 +64,13 @@ body {
   border-radius: 100px;
   padding: 1rem 1.5rem;
   border: none;
+  font-weight: 700;
 }
 .content .sign-up-container .sign-up-component button:hover {
   cursor: pointer;
   color: #B3FFE2;
+  background-color: #B3FFE2;
+  color: #121725;
 }
 
 /*# sourceMappingURL=style.css.map */
