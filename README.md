@@ -1,7 +1,7 @@
 # Zadatak 3 - Nikola Lukic
 
 ## Production url:
-- still to be added
+- https://zadatak-3-sigma.vercel.app/
 
 ---
 
