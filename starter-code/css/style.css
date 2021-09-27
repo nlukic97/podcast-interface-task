@@ -1,6 +1,9 @@
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Chivo", sans-serif;
   font-size: 18px;
   color: #FFF;
@@ -8,7 +11,6 @@ body {
 }
 
 .content {
-  border: 1px solid red;
   display: inline-block;
   background-color: #121725;
   width: 723px;
@@ -28,6 +30,7 @@ body {
 }
 .content p {
   color: #C2CBE5;
+  width: 437px;
 }
 .content .sign-up-container .sign-up-component {
   display: inline-block;
@@ -53,6 +56,7 @@ body {
 .content .sign-up-container .sign-up-component input:-webkit-autofill, .content .sign-up-container .sign-up-component input:-webkit-autofill:hover, .content .sign-up-container .sign-up-component input:-webkit-autofill:focus {
   border: none;
   -webkit-text-fill-color: #FFF;
+  box-shadow: none;
   -webkit-box-shadow: none;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -71,6 +75,31 @@ body {
   color: #B3FFE2;
   background-color: #B3FFE2;
   color: #121725;
+}
+.content .sign-up-container p.error-message {
+  color: red;
+  font-size: 12px;
+  padding: 0.4rem 1.8rem;
+  display: none;
+}
+.content .sign-up-container p.error-message.show-error {
+  display: block;
+}
+.content .platforms #apple-podcasts, .content .platforms #google-podcasts, .content .platforms #pocket-casts {
+  margin-left: 2rem;
+}
+.content .platforms #spotify {
+  width: 96px;
+}
+.content .platforms #apple-podcasts {
+  width: 78px;
+}
+.content .platforms #google-podcasts {
+  width: 125px;
+  margin-top: -4px;
+}
+.content .platforms #pocket-casts {
+  width: 129px;
 }
 
 /*# sourceMappingURL=style.css.map */

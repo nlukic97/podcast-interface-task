@@ -1,6 +1,5 @@
 // Content box
 .content {
-    border: 1px solid red;
     display: inline-block;
     background-color: $color-darker-blue;
     width: 723px;
@@ -22,13 +21,12 @@
     
     p {
         color:$color-light-gray;
+        width: 437px; //careful of this one
     }
     
     .sign-up-container {
-        
         .sign-up-component {
             display: inline-block;
-            // border: 1px solid orange;
             background-color: $color-dark-blue;
             border-radius: 100px;
             padding: 0.3rem;
@@ -55,6 +53,7 @@
                 &:-webkit-autofill:focus {
                     border: none;
                     -webkit-text-fill-color: $color-white;
+                    box-shadow:none;
                     -webkit-box-shadow: none;
                     transition: background-color 5000s ease-in-out 0s;
                 }
@@ -79,5 +78,41 @@
                 }
             }
         }
+
+        p.error-message {
+            color: red;
+            font-size: 12px;
+            padding: 0.4rem 1.8rem; // 0.3rem (.sign-up-component) + 1.5rem (input) = 1.8rem
+            display: none;
+            &.show-error {
+                display: block;
+            }
+        }
+    }
+
+    .platforms {
+        // display: flex;
+        #apple-podcasts, #google-podcasts, #pocket-casts{
+            margin-left: 2rem;
+        }
+
+        #spotify {
+            width: 96px;
+        }
+        
+        #apple-podcasts {
+            width: 78px;
+        }
+        
+        #google-podcasts {
+            width: 125px;
+            margin-top: -4px;
+        }
+
+        #pocket-casts {
+            width: 129px;
+        }
+
+        
     }
 }
