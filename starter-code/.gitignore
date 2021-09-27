@@ -18,3 +18,5 @@
 # Avoid adding other files/folder from development
 node_modules
 .vscode/*
+
+*.txt

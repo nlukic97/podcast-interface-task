@@ -1,0 +1,63 @@
+// Content box
+.content {
+    border: 1px solid red;
+    display: inline-block;
+    background-color: $color-darker-blue;
+    width: 723px;
+    min-height:509px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        color: $color-white;
+        font-size: 52px;
+        font-weight: 300;
+        text-transform:uppercase;
+
+        .color-green {
+            color:$color-green;
+        }
+    }
+
+    p {
+        color:$color-light-gray;
+    }
+
+    .sign-up-container {
+
+        .sign-up-component {
+            display: inline-block;
+            border: 1px solid orange;
+            background-color: $color-dark-gray;
+            border-radius: 100px;
+            // padding: 1rem;
+
+            input {
+                display: inline-block;
+                // padding: 0.2rem 0.5rem;
+                background-color: transparent;
+                border: none;
+
+                &:focus {
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+            button {
+                display: inline-block;
+                background-color: $color-green;
+                color: $color-darker-blue;
+                text-transform: capitalize;
+                border-radius: 100px;
+                padding: 1rem 1.5rem;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $color-light-green;
+                }
+            }
+        }
+    }
+}
