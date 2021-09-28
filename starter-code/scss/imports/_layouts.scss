@@ -1,0 +1,96 @@
+.container {
+    // background: chartreuse;
+    background: url('../../assets/desktop/image-host.jpg') no-repeat top right/contain;
+    height: 640px;
+    
+    width: 100%; //maybe I don't need this
+    max-width: 1440px;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    // /border: 1px solid green;
+    margin:165px auto 0; //reset this
+    position: relative;
+    
+    .content-box {
+        width: 60%;
+        background-color:$color-darker-blue;
+        padding-left: 10%;
+
+        #logo {
+            position: absolute;
+            top: -30px;
+        }
+        
+        // ---------- Content box ---------- 
+        .content {
+            display: inline-block;
+            background-color: $color-darker-blue;
+            //width: 723px; //careful of this one - should it be 'max-width' ?
+            padding: 99px 1.5rem 0 0;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
+            h1 {
+                color: $color-white;
+                font-size: 52px;
+                font-weight: 300;
+                text-transform:uppercase;
+                margin: 1rem 0;
+                
+                .color-green {
+                    color:$color-green;
+                }
+            }
+            
+            p {
+                color:$color-light-gray;
+                width: 437px; //careful of this one - should it be 'max-width' ?
+                line-height: 28px;
+            }
+            
+            .sign-up-container {
+                margin: 40px 0;
+            }
+            
+            .platforms {
+                // display: flex;
+                img {
+                    opacity: 0.6;
+                }
+                
+                #apple-podcasts, #google-podcasts, #pocket-casts{
+                    margin-left: 2rem;
+                }
+                
+                #spotify {
+                    width: 96px;
+                }
+                
+                #apple-podcasts {
+                    width: 78px;
+                }
+                
+                #google-podcasts {
+                    width: 125px;
+                    padding-bottom: 4px;
+                }
+                
+                #pocket-casts {
+                    width: 129px;
+                }
+            }
+        }
+
+        
+    }
+
+    #dotted-img {
+        position: absolute;
+        right: 0;
+        bottom: -52px;
+    }
+}
