@@ -56,7 +56,7 @@ p {
   -webkit-box-shadow: none;
   transition: background-color 5000s ease-in-out 0s;
 }
-.sign-up-component button {
+.sign-up-component button#submit {
   display: inline-block;
   background-color: #54E6AF;
   color: #121725;
@@ -66,7 +66,7 @@ p {
   border: none;
   font-weight: 700;
 }
-.sign-up-component button:hover {
+.sign-up-component button#submit:hover {
   cursor: pointer;
   color: #B3FFE2;
   background-color: #B3FFE2;
