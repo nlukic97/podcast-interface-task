@@ -17,3 +17,21 @@ body {
     // align-items: center;
     // justify-content: flex-start;
 }
+
+h1 {
+    color: $color-white;
+    font-size: 52px;
+    font-weight: 300;
+    text-transform:uppercase;
+    margin: 1rem 0;
+    
+    .color-green {
+        color:$color-green;
+    }
+}
+
+p {
+    color:$color-light-gray;
+    width: 437px; //careful of this one - should it be 'max-width' ?
+    line-height: 28px;
+}

@@ -1,4 +1,4 @@
-// sign up component
+// ---------- Sign Up component ----------
 .sign-up-component {
     display: inline-block;
     background-color: $color-dark-blue;
@@ -31,7 +31,6 @@
             -webkit-box-shadow: none;
             transition: background-color 5000s ease-in-out 0s;
         }
-        
     }
     
     button {
@@ -53,7 +52,8 @@
     }
 }
 
-// error message
+
+// ---------- Error message component ----------
 p.error-message {
     color: $color-red;
     font-size: 12px;

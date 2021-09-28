@@ -11,6 +11,23 @@ body {
   font-weight: 300;
 }
 
+h1 {
+  color: #FFF;
+  font-size: 52px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+h1 .color-green {
+  color: #54E6AF;
+}
+
+p {
+  color: #C2CBE5;
+  width: 437px;
+  line-height: 28px;
+}
+
 .sign-up-component {
   display: inline-block;
   background-color: #2C344B;
@@ -95,21 +112,6 @@ p.error-message.show-error {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-.container .content-box .content h1 {
-  color: #FFF;
-  font-size: 52px;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin: 1rem 0;
-}
-.container .content-box .content h1 .color-green {
-  color: #54E6AF;
-}
-.container .content-box .content p {
-  color: #C2CBE5;
-  width: 437px;
-  line-height: 28px;
 }
 .container .content-box .content .sign-up-container {
   margin: 40px 0;
