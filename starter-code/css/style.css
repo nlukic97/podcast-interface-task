@@ -171,7 +171,7 @@ p.error-message.show-error {
     height: 767px;
   }
 }
-@media screen and (max-width: 836px) {
+@media screen and (max-width: 768px) {
   .container {
     display: block;
     height: unset;
@@ -212,6 +212,9 @@ p.error-message.show-error {
     font-size: 15px;
   }
 
+  .sign-up-container {
+    order: 4;
+  }
   .sign-up-container .sign-up-component {
     background-color: unset;
     border-radius: unset;

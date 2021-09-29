@@ -32,8 +32,7 @@
 }
 
 //ipad and tablets
-// @media screen and(max-width:768px) {
-    @media screen and(max-width:836px) {
+    @media screen and(max-width:768px) {
         .container {
             display: block;
             height: unset;
@@ -85,6 +84,7 @@
         
         // submit button component
         .sign-up-container {
+            order: 4;
             .sign-up-component {
                 background-color: unset;
                 border-radius: unset;
