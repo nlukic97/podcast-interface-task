@@ -15,6 +15,7 @@ From there, open the following file:
 
 ---
 ## Instalation for development
-- For development, repeat the previously discussed instalation steps, and run the following command:
-        
+- For development using the scss files, repeat the previously discussed instalation steps, and run the following command:
+
+        npm install
         npm run compile:sass
