@@ -1,0 +1,117 @@
+// laptop sizes
+@media screen and (max-width:1160px) {
+    .container {
+        margin: 0;
+        position: static;
+
+        .content-box {
+            padding-left: 20px;
+            // width:80%;
+
+            #logo {
+                top: 56px;
+            }
+        }
+
+        #dotted-img { //there is a problem here
+            position: absolute;
+            right: unset;
+            bottom: 0; //maybe this is a fix?
+            left: 20px;
+            z-index: -3;
+        }
+    }
+}
+
+
+@media screen and (max-width:1060px) {
+    .container {
+        background: url("../../assets/tablet/image-host.jpg") no-repeat top right/contain;
+        height: 767px;
+    }
+}
+
+//ipad and tablets
+// @media screen and(max-width:768px) {
+@media screen and(max-width:836px) {
+    .container {
+        display: block;
+        height: unset;
+        background: linear-gradient($color-gradient, $color-gradient), url("../../assets/mobile/image-host.jpg") no-repeat center center/cover;
+
+        .content-box {
+            background-color: unset;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            
+            .content {
+                padding: 0 24px;
+                background-color: unset;
+
+                p {
+                    width: 100%;
+                }
+            }
+
+            #logo {
+                position: static;
+                padding: 56px 0;
+            }
+        }
+
+        #dotted-img {
+            display: none;
+        }
+    }
+    
+    //error message
+    p.error-message {
+        padding: 0;
+        position: absolute;
+    }
+
+    //typography
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    // submit button component
+    .sign-up-component {
+        background-color: unset;
+        border-radius: unset;
+        width: 100%;
+        padding: 0;
+        
+        input {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            background-color: $color-dark-blue;
+            padding: 1rem 1.5rem;
+            border-radius: 100px;
+            margin-bottom: 16px;
+        }
+        
+        button#submit {
+            width: 100%;
+            display: block;
+
+            &:hover {
+
+            }
+        }
+    }
+
+
+
+}
+
+//mobile screens
+@media screen and(max-width:479px) {
+    
+}
