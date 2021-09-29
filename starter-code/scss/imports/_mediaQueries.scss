@@ -31,88 +31,97 @@
     }
 }
 
-//ipad and tablets
-    @media screen and(max-width:768px) {
-        .container {
-            display: block;
-            height: unset;
-            background: linear-gradient($color-gradient, $color-gradient), url("../../assets/mobile/image-host.jpg") no-repeat center center/cover;
+//tablet
+@media screen and(max-width:768px) {
+    .container {
+        .content-box {
+            width: 85%;
+            // box-sizing: border-box;
+            .content {
+                padding: 50px 3rem 0 0;
+            }
+        }
+    }
+}
+
+
+//mobile screens
+@media screen and(max-width:560px) {
+    .container {
+        display: block;
+        height: unset;
+        background: linear-gradient($color-gradient, $color-gradient), url("../../assets/mobile/image-host.jpg") no-repeat center center/cover;
+        
+        .content-box {
+            background-color: unset;
+            width: 100%;
+            text-align: center;
+            padding: 0;
             
-            .content-box {
+            .content {
+                padding: 0 24px;
                 background-color: unset;
-                width: 100%;
-                text-align: center;
-                padding: 0;
                 
-                .content {
-                    padding: 0 24px;
-                    background-color: unset;
+                p {
+                    &.text-content{
+                        width: unset;
+                    }
                     
-                    p {
-                        &.text-content{
-                            width: unset;
-                        }
-                        
-                        &.error-message {
-                            padding: 0;
-                            width: 100%;
-                            left: 0;
-                            /** Do not add    'bottom:0' ! Will break CSS, and it not necessary. */
-                        }
+                    &.error-message {
+                        padding: 0;
+                        width: 100%;
+                        left: 0;
+                        /** Do not add    'bottom:0' ! Will break CSS, and it not necessary. */
                     }
                 }
-                
-                #logo {
-                    position: static;
-                    padding: 56px 0;
-                }
             }
             
-            #dotted-img {
-                display: none;
+            #logo {
+                position: static;
+                padding: 56px 0;
             }
         }
         
-        //typography
-        h1 {
-            font-size: 26px;
+        #dotted-img {
+            display: none;
         }
-        
-        p {
-            font-size: 15px;
-        }
-        
-        // submit button component
-        .sign-up-container {
-            order: 4;
-            .sign-up-component {
-                background-color: unset;
-                border-radius: unset;
-                width: 100%;
-                padding: 0;
-                
-                input {
-                    width: 100%;
-                    display: block;
-                    box-sizing: border-box;
-                    background-color: $color-dark-blue;
-                    padding: 1rem 1.5rem;
-                    border-radius: 100px;
-                    margin-bottom: 16px;
-                }
-                
-                button#submit {
-                    width: 100%;
-                    display: block;
-                }
-            }
-        }
-        
-        
-        
     }
     
-    //mobile screens
-    @media screen and(max-width:479px) {
-        
+    //typography
+    h1 {
+        font-size: 26px;
     }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    // submit button component
+    .sign-up-container {
+        order: 4;
+        .sign-up-component {
+            background-color: unset;
+            border-radius: unset;
+            width: 100%;
+            padding: 0;
+            
+            input {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                background-color: $color-dark-blue;
+                padding: 1rem 1.5rem;
+                border-radius: 100px;
+                margin-bottom: 16px;
+            }
+            
+            button#submit {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    
+    
+    
+}

@@ -172,6 +172,14 @@ p.error-message.show-error {
   }
 }
 @media screen and (max-width: 768px) {
+  .container .content-box {
+    width: 85%;
+  }
+  .container .content-box .content {
+    padding: 50px 3rem 0 0;
+  }
+}
+@media screen and (max-width: 560px) {
   .container {
     display: block;
     height: unset;
