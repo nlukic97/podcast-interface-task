@@ -127,7 +127,7 @@ p.error-message.show-error {
 .container .content-box .content .platforms #apple-podcasts, .container .content-box .content .platforms #google-podcasts, .container .content-box .content .platforms #pocket-casts {
   margin-left: 2rem;
 }
-.container .content-box .content .platforms #spotify {
+.container .content-box .content .platforms #spotify-img {
   width: 96px;
 }
 .container .content-box .content .platforms #apple-podcasts {
@@ -173,13 +173,17 @@ p.error-message.show-error {
 }
 @media screen and (max-width: 768px) {
   .container .content-box {
-    width: 85%;
+    width: 524px;
+    box-sizing: border-box;
   }
   .container .content-box .content {
     padding: 50px 3rem 0 0;
   }
+  .container .content-box .content .platforms #apple-podcasts, .container .content-box .content .platforms #google-podcasts, .container .content-box .content .platforms #pocket-casts {
+    margin-left: 0.3rem;
+  }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
   .container {
     display: block;
     height: unset;
@@ -203,6 +207,9 @@ p.error-message.show-error {
     width: 100%;
     left: 0;
     /** Do not add    'bottom:0' ! Will break CSS, and it not necessary. */
+  }
+  .container .content-box .content .platforms {
+    margin: 20px 0 0;
   }
   .container .content-box #logo {
     position: static;
@@ -241,6 +248,24 @@ p.error-message.show-error {
   .sign-up-container .sign-up-component button#submit {
     width: 100%;
     display: block;
+  }
+}
+@media screen and (max-width: 503px) {
+  .container .content-box .content .platforms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px auto 0;
+  }
+  .container .content-box .content .platforms #apple-podcasts, .container .content-box .content .platforms #google-podcasts, .container .content-box .content .platforms #pocket-casts {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container .content-box .content .platforms {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
 }
 

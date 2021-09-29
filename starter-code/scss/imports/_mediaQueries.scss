@@ -35,10 +35,17 @@
 @media screen and(max-width:768px) {
     .container {
         .content-box {
-            width: 85%;
-            // box-sizing: border-box;
+            // width: 85%;
+            width: 524px;
+            box-sizing: border-box;
             .content {
                 padding: 50px 3rem 0 0;
+
+                .platforms {                    
+                    #apple-podcasts, #google-podcasts, #pocket-casts{
+                        margin-left: 0.3rem;
+                    }
+                }
             }
         }
     }
@@ -46,7 +53,7 @@
 
 
 //mobile screens
-@media screen and(max-width:560px) {
+@media screen and(max-width:600px) {
     .container {
         display: block;
         height: unset;
@@ -74,6 +81,10 @@
                         /** Do not add    'bottom:0' ! Will break CSS, and it not necessary. */
                     }
                 }
+
+                .platforms {
+                    margin: 20px 0 0;
+                }
             }
             
             #logo {
@@ -99,6 +110,7 @@
     // submit button component
     .sign-up-container {
         order: 4;
+
         .sign-up-component {
             background-color: unset;
             border-radius: unset;
@@ -121,7 +133,37 @@
             }
         }
     }
-    
-    
-    
+}
+
+@media screen and (max-width: 503px){
+    .container {        
+        .content-box {
+            .content {
+                .platforms {
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 10px;
+                    margin: 20px auto 0;
+
+                    #apple-podcasts, #google-podcasts, #pocket-casts{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container {        
+        .content-box {
+            .content {
+                .platforms {
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    gap: 10px;
+                }
+            }
+        }
+    }
 }
