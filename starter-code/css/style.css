@@ -23,9 +23,13 @@ h1 .color-green {
   color: #54E6AF;
 }
 
-p {
+p.text-content {
   color: #C2CBE5;
   width: 437px;
+  line-height: 28px;
+}
+
+p {
   line-height: 28px;
 }
 
@@ -183,8 +187,14 @@ p.error-message.show-error {
     padding: 0 24px;
     background-color: unset;
   }
-  .container .content-box .content p {
+  .container .content-box .content p.text-content {
+    width: unset;
+  }
+  .container .content-box .content p.error-message {
+    padding: 0;
     width: 100%;
+    left: 0;
+    /** Do not add    'bottom:0' ! Will break CSS, and it not necessary. */
   }
   .container .content-box #logo {
     position: static;
@@ -192,11 +202,6 @@ p.error-message.show-error {
   }
   .container #dotted-img {
     display: none;
-  }
-
-  p.error-message {
-    padding: 0;
-    position: absolute;
   }
 
   h1 {
@@ -207,13 +212,13 @@ p.error-message.show-error {
     font-size: 15px;
   }
 
-  .sign-up-component {
+  .sign-up-container .sign-up-component {
     background-color: unset;
     border-radius: unset;
     width: 100%;
     padding: 0;
   }
-  .sign-up-component input {
+  .sign-up-container .sign-up-component input {
     width: 100%;
     display: block;
     box-sizing: border-box;
@@ -222,7 +227,7 @@ p.error-message.show-error {
     border-radius: 100px;
     margin-bottom: 16px;
   }
-  .sign-up-component button#submit {
+  .sign-up-container .sign-up-component button#submit {
     width: 100%;
     display: block;
   }

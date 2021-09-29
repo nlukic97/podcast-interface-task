@@ -30,8 +30,12 @@ h1 {
     }
 }
 
-p {
+p.text-content {
     color:$color-light-gray;
     width: 437px; //careful of this one - should it be 'max-width' ?
+    line-height: 28px;
+}
+
+p {
     line-height: 28px;
 }
